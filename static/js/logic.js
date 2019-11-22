@@ -1,8 +1,8 @@
 //API endpoint are stored inside 'queryUrl'
-var queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
+var Url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
 
 //Execute a 'get' request from the prior 'URL'
-d3.json(queryUrl, function(data) 
+d3.json(Url, function(data) 
 {
   //Send recieved 'data.features' object to a function
   createFeatures(data.features);
